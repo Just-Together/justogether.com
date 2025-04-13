@@ -1,0 +1,394 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ne İçin Mimarlık? | Blog | Just Together </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<!-- inlcude google cabin font cdn link -->
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!-- include the site bootstrap stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/bootstrap.css">
+<!-- include the site stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/style.css">
+<!-- include theme color setting stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/colors.css">
+<!-- include the site responsive stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/responsive.css">
+<!-- inlcude google nunito sans font cdn link -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://justogether.com/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://justogether.com/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://justogether.com/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://justogether.com/assets/favicon/site.webmanifest">
+
+
+<style>
+	.navbar-light .navbar-nav .nav-link
+	 {
+    padding: 13px 15px 12px;
+    width: 100%;
+}
+	
+    #top-button {
+        display: inline-block;
+        background-color: #363737;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s,
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        text-decoration: none;
+
+    }
+    #top-button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+    #top-button:hover {
+        cursor: pointer;
+        background-color: #9d9d9d;
+    }
+    #top-button:active {
+        background-color: #9d9d9d;
+    }
+    #top-button.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+	
+</style>
+	<!-- Font Awesome Icon CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+<!--header area start-->
+
+
+<header id="pageHeader" class="bg-white">
+    <div class="hdFixerWrap py-2 py-md-6 py-xl-3 sSticky bg-white" >
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light p-0">
+                <div class="logo flex-shrink-0 mr-2 mr-xl-16 mr-wlwd-36">
+                    <a href="https://justogether.com/">
+                        <img draggable="false" src="https://justogether.com/assets/images/logo.png" class="img-fluid" width="500" alt="Just Together Logo">
+                    </a>
+                </div>
+                <div class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
+                    <div class="collapse navbar-collapse pageMainNavCollapse mt-2 mt-md-0" id="pageMainNavCollapse">
+                        <ul class="navbar-nav mainNavigation">
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hakkımızda</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="https://justogether.com/nedir">Just Together Nedir ?</a></li>
+                                        <li><a class="dropdown-item" href="https://justogether.com/ekibimiz">Ekibimiz</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+    						<a class="nav-link dropdown-toggle dropIcn" href="https://justogether.com/calistay" role="button"
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+       onclick="if(!event.target.closest('.dropdown-menu')){ window.location.href='https://justogether.com/calistay'; }">
+        Çalıştay</a>
+    							<div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+        							<ul class="list-unstyled mb-0 hdDropdownList">
+            								<li><a href="https://justogether.com/calistay#amac">Amaç</a></li>
+            								<li><a href="https://justogether.com/calistay#yontem">Yöntem</a></li>
+            								<li><a href="https://justogether.com/calistay#akis">Akış</a></li>
+            								<li><a href="https://justogether.com/calistay#egitimciler">Eğitimciler</a></li>
+            								<li><a href="https://justogether.com/calistay#panelistler">Panelistler</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeri</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="https://justogether.com/fotograf-galerisi">Fotoğraf Galerisi</a></li>
+                                        <li><a class="dropdown-item" href="https://justogether.com/video-galerisi">Video Galerisi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/yakinda" >Haberler</a>
+                            </li>-->
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/blog" >Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/iletisim" >İletişim</a>
+                            </li>
+                        </ul>
+							<a href="https://forms.gle/eHgkKyL5WCJd8vUK8" target="_blank" class="btn btn-outline-secondary bdrWidthAlter ml-4 ml-sm-6 btnHd d-none d-lg-block text-capitalize position-relative border-0 p-0" data-hover="Gönüllü Başvuru Formu">
+    <span class="d-block btnText">Gönüllü Başvuru Formu</span>
+</a>
+
+								<button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                    </div>
+                </div>
+				<div class="hdRighterWrap d-flex align-items-center justify-content-end" hidden="">
+                    <button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--header area end-->
+
+<!--breadcrumbs area start-->
+<header class="pageMainHead d-flex position-relative bgCover w-100 text-white" style="background-image: url(http://justogether.com/assets/images/breadcrumb.jpg">
+    <div class="alignHolder d-flex w-100 align-items-center">
+        <div class="align w-100 position-relative">
+            <div class="container">
+                <h1 class="text-white mb-2">Ne İçin Mimarlık?</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <li class="breadcrumb-item"><a href="https://justogether.com/">Anasayfa</a></li>
+                        <li class="breadcrumb-item"><a>Blog Detay</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--breadcrumbs area end-->
+<br>
+
+<div class="blog_bg_area blog_details_bg">
+    <div class="container">
+        <div class="blog_page_section">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <!--blog grid area start-->
+                    <div class="blog_wrapper blog_details">
+                        <article class="single_blog">
+                            <figure>
+                                <figcaption style="padding-top: 40px" class="blog_content">
+
+                                    <h3 class="post_title">Ne İçin Mimarlık?</h3>
+                                    <br>
+                                <div class="blog_thumb">
+                                    <img draggable="false"  src="https://justogether.com/yonetim/uploads/blog_v/11.jpg" alt="">
+                                </div>
+                                    <br>
+                                    <div class="post_content">
+                                        <p><p><strong>Saydnaya Hapishanesi: “Mezbaha" Olarak Bilinen İşkence ve Kitlesel İnfaz Merkezi</strong></p><p><strong>Hapishane Düzeni ve Tasarımı:</strong><br>Forensic Architecture, Saydnaya Hapishanesi'ni hayatta kalanların tanıklıklarına dayanarak dijital olarak yeniden inşa etti. Bu çalışma sayesinde hücrelerin yerleşiminden havalandırma ve ışık eksikliğine kadar işkenceyi kolaylaştıran sistematik tasarım kararlarını ortaya çıkarmıştır.</p><p>Hapishane, çok katmanlı bir gizlilik ve izolasyon sağlamak amacıyla tasarlanmıştır. Kalın duvarlar, ses yalıtımı ve penceresiz hücreler mevcuttur. Dar koridorlar ve merdivenler, mahkûmların mekânsal farkındalıklarını ve özerkliklerini kaybetmelerini sağlamak için bilinçli bir şekilde tasarlanmıştır.</p><p>Forensic Architecture, Sadnaya’da mimarinin bilinçli olarak baskı ve işkenceyi kolaylaştırmak amacıyla tasarlandığını kanıtlamıştır.</p><p><strong>Saydnaya Hapishanesi’nin Mimari Özellikleri ve Esirler Üzerindeki Etkisi</strong></p><p>Saydnaya Hapishanesi, mimarisiyle işkence, izolasyon ve psikolojik baskı için özel olarak tasarlanmıştır. Bu yapı, Suriye rejimi tarafından siyasi tutuklulara yönelik sistematik baskının fiziksel bir aracı olarak kullanılmıştır. Hapishane, Forensic Architecture ve Amnesty International’ın çalışmalarıyla detaylı şekilde analiz edilmiştir.&nbsp;</p><p><strong>Mimari Özellikler</strong></p><ul><li><strong>Penceresiz ve Ses Yalıtımlı Hücreler:</strong><br>Hapishanede hücreler tamamen penceresizdir ve ses yalıtımı bulunmaktadır. Bu durum, mahkûmların dış dünyayla tüm bağlarının kesilmesine yol açar. Mahkûmlar, gözleri bağlı halde oldukları için navigasyon için sese güvenmek zorunda kalıyorlardı. Gardiyanlar, bu durumu<strong> </strong>kötüye kullanarak sesin bir korku ve kontrol aracı haline gelmesini sağladı.</li><li><strong>Dar ve Labirent vari Koridorlar:</strong><br>Koridorlar ve merdivenler dar ve karışıktır. Bu tasarım, mahkûmların yönlerini kaybetmelerine ve sürekli bir belirsizlik içinde kalmalarına neden olur.</li><li><strong>Sesin Manipülasyonu:</strong><br>Akustik özellikler, infazların ve işkencelerin seslerinin mahkûmlara işkence olarak ulaşmasını sağlayacak şekilde ayarlanmıştır.</li><li><strong>İnfaz Alanları:</strong><br>Kitlesel infazlar için özel tasarlanmış odalar bulunmaktadır. Bu odalar tamamen gizlilik içinde, infazların diğer mahkûmlar üzerinde korku yaratması amacıyla inşa edilmiştir. Tanıklar, infazların yankılanan seslerini ve mimarinin akustiğinin bu sesleri nasıl güçlendirdiğini tarif etmiştir.</li></ul><p><strong>Esirlerin Durumu</strong></p><ul><li><strong>Duyusal İzolasyon:</strong><br>Hayatta kalanlar, gözleri bağlı bir şekilde hareket ettiklerini ve sadece sese güvendiklerini ifade etmiştir. Gardiyanlar, mahkûmları korkutmak için bu durumu manipüle etmiştir. “Sessizlik zorunluydu; en ufak bir fısıltı bile ağır cezaları beraberinde getirebiliyordu.”</li><li><strong>İşkence ve Dayak:</strong><br>Mahkûmlar, özellikle hapishaneye varışta ya da sorgu sırasında şiddetli dayaklara maruz kalmışlardır. Elektrik verme ve kırbaçlama gibi yöntemler yaygındı ve birçok kişi ciddi şekilde yaralanmış veya sakat kalmıştır. Mahkûmlar, infaz seslerini duyarken dar, havasız ve karanlık hücrelerde tutulmuşlardır.</li><li><strong>Sistematik İnfazlar:</strong><br>Tanıklar, özel odalarda kitlesel asmaların nasıl gerçekleştiğini detaylandırmıştır. Mahkûmlar, zincir ve ağızlık seslerini ve asılan arkadaşlarının son anlarını duymuştur.</li><li><strong>Aşırı Kalabalık ve İhmaller:</strong><br>Hücreler mahkûmlarla dolup taşmıştır ve yiyecek, su ve tıbbi bakım gibi temel ihtiyaçlar sistematik olarak ihmal edilmiştir. Bu durum, kötü beslenme ve tedavi edilmeyen yaralanmalar nedeniyle ölümleri artırmıştır.</li><li><strong>Mimari Tasarımın Travmaya Etkisi:</strong><br>Mahkûmlar, hapishanenin tasarımının acılarını nasıl artırdığını anlatmıştır. Karanlık, havasız hücreler ve infaz odalarının akustiği psikolojik baskıyı daha da derinleştirmiştir.</li><li><strong>Zorla İtiraflar:</strong><br>Birçok mahkûm, işlemedikleri suçları kabul etmeye zorlanmıştır. Bu itiraflar, sahte mahkemelerde delil olarak kullanılmıştır.</li><li><strong>Özgürlüğün ve Zaman Algısının Kaybı:</strong><br>Penceresiz hücreler ve kontrollü ortam, mahkûmların dış dünyadan tamamen koparılmasına ve zaman algılarının kaybolmasına yol açmıştır.<br><br><strong>Saydnaya Prison: A Torture and Mass Execution Facility Known as the "Slaughterhouse"</strong></li></ul><p><strong>Prison Layout and Design:</strong><br>Forensic Architecture digitally reconstructed Saydnaya Prison based on the testimonies of survivors. This work has revealed systematic design decisions that facilitate torture, such as the arrangement of cells, lack of ventilation, and absence of light.</p><p>The prison was designed to ensure multilayered secrecy and isolation. It includes thick walls, soundproofing, and windowless cells. Narrow corridors and staircases were deliberately designed to disorient prisoners and strip them of spatial awareness and autonomy.</p><p>Forensic Architecture has proven that the architecture of Saydnaya was deliberately designed to facilitate oppression and torture.</p><p><strong>The Architectural Features of Saydnaya Prison and Their Impact on Prisoners</strong></p><p>Saydnaya Prison was specifically designed to facilitate torture, isolation, and psychological pressure. This structure served as a physical tool of systematic oppression by the Syrian regime against political detainees. The prison has been thoroughly analyzed through the works of Forensic Architecture and Amnesty International.</p><p><strong>Architectural Features</strong></p><ul><li><strong>Windowless and Soundproof Cells:</strong><br>The cells in the prison are entirely windowless and soundproof. This design cuts off prisoners from any connection to the outside world. Blindfolded detainees were forced to rely solely on sound for navigation. Guards exploited this condition by weaponizing sound as a tool of fear and control.</li><li><strong>Narrow, Maze-like Corridors:</strong><br>Corridors and staircases were narrow and disorienting. This layout deliberately caused prisoners to lose their sense of direction and remain in a constant state of uncertainty.</li><li><strong>Manipulation of Sound:</strong><br>The prison's acoustics were engineered to amplify the sounds of executions and torture, transmitting them to prisoners as an additional form of psychological torment.</li><li><strong>Execution Chambers:</strong><br>Special rooms were constructed for mass executions, designed with complete secrecy. These chambers instilled fear among prisoners, as survivors described how the acoustics amplified the haunting echoes of these events.</li></ul><p><strong>Condition of Prisoners</strong></p><ul><li><strong>Sensory Isolation:</strong><br>Survivors recounted moving blindfolded and relying solely on sound for navigation. Guards exploited this vulnerability, using silence and sound to instill fear. “Silence was mandatory; even a whisper could result in severe punishment.”</li><li><strong>Torture and Beatings:</strong><br>Prisoners endured extreme violence, especially upon arrival or during interrogation. Methods such as electrocution and flogging were common, leaving many seriously injured or permanently disabled. Detainees were confined in cramped, airless, dark cells, forced to listen to the sounds of executions.</li><li><strong>Systematic Executions:</strong><br>Witnesses described mass hangings conducted in specialized rooms. Prisoners heard the clinking of chains, muffled voices, and the final moments of their fellow detainees, amplifying the psychological terror.</li><li><strong>Overcrowding and Neglect:</strong><br>Cells were overcrowded, and basic needs like food, water, and medical care were systematically neglected. This led to severe malnutrition, untreated injuries, and an increase in deaths from preventable causes.</li><li><strong>The Impact of Architectural Design on Trauma:</strong><br>Prisoners described how the prison's design amplified their suffering. The dark, airless cells and the acoustic design of execution chambers heightened psychological pressure, intensifying their sense of despair and fear.</li><li><strong>Forced Confessions:</strong><br>Many detainees were coerced into confessing crimes they did not commit. These confessions were later used as evidence in sham trials to justify the regime's actions.</li><li><strong>Loss of Freedom and Perception of Time:</strong><br>The windowless cells and highly controlled environment severed prisoners from the outside world entirely. This isolation led to a disorienting loss of time perception, further eroding their psychological resilience.</li></ul></p>
+                                        <br>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    <!--blog grid area start-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+<section class="exploreDepartmentsBlock py-8 py-md-10 py-lg-14 py-xl-22">
+    <div class="container">
+        <div class="row justify-content-center isoContentHolder mb-8">
+                                <div class="col-12 col-sm-6 col-lg-4 isoCol">
+                        <a href="https://justogether.com/yonetim/uploads/blog_v/1-11.jpg" class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
+                            <img src="https://justogether.com/yonetim/uploads/blog_v/1-11.jpg" class="img-fluid" alt="image description">
+                        </a>
+                    </div>
+                                <div class="col-12 col-sm-6 col-lg-4 isoCol">
+                        <a href="https://justogether.com/yonetim/uploads/blog_v/1-09.jpg" class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
+                            <img src="https://justogether.com/yonetim/uploads/blog_v/1-09.jpg" class="img-fluid" alt="image description">
+                        </a>
+                    </div>
+                                <div class="col-12 col-sm-6 col-lg-4 isoCol">
+                        <a href="https://justogether.com/yonetim/uploads/blog_v/1-07.jpg" class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
+                            <img src="https://justogether.com/yonetim/uploads/blog_v/1-07.jpg" class="img-fluid" alt="image description">
+                        </a>
+                    </div>
+                                <div class="col-12 col-sm-6 col-lg-4 isoCol">
+                        <a href="https://justogether.com/yonetim/uploads/blog_v/1-05.jpg" class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
+                            <img src="https://justogether.com/yonetim/uploads/blog_v/1-05.jpg" class="img-fluid" alt="image description">
+                        </a>
+                    </div>
+                                <div class="col-12 col-sm-6 col-lg-4 isoCol">
+                        <a href="https://justogether.com/yonetim/uploads/blog_v/1-03.jpg" class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
+                            <img src="https://justogether.com/yonetim/uploads/blog_v/1-03.jpg" class="img-fluid" alt="image description">
+                        </a>
+                    </div>
+                    </div>
+    </div>
+</section>
+
+
+<!--footer area start-->
+<div class="ftAreaWrap position-relative bg-gDark fontAlter" style="width: 100%;
+	height: 100%;
+	background-image: url(https://justogether.com/assets/images/shape.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;">
+    <aside class="ftConnectAside pt-4 pb-3 pt-md-7 pb-md-7 text-center text-md-left" >
+        <div class="container" >
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7">
+                    <nav class="ftcaNav mb-4 mb-lg-0">
+                        <p>Just Together - Design For Humanity</p>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="ctConnectWrap d-sm-flex justify-content-sm-center justify-content-lg-end align-items-sm-center">
+                        <strong class="title flex-shrink-0 mb-1 font-weight-normal mr-sm-3 d-block">Sosyal Medya Hesaplarımız</strong>
+                        <ul class="list-unstyled socialNetworks ftSocialNetworks d-flex flex-wrap justify-content-center justify-content-sm-end mb-0">
+                                                        <li>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=61554677020552">
+                                    <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
+                                </a>
+                            </li>
+                                                                                                                <li>
+                                <a target="_blank" href="https://www.instagram.com/_justtogether/">
+                                    <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
+                                </a>
+                            </li>
+                                                                                        <li>
+                                    <a target="_blank" href="https://www.linkedin.com/showcase/justogether/">
+                                        <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+                                    </a>
+                                </li>
+                                                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- footerAside -->
+    <aside class="footerAside pt-9 pb-sm-2 pt-xl-14 pb-xl-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-5 col-xl-3 mb-6">
+                    <div class="ftLogo  mb-6">
+                            <img draggable="false" src="https://justogether.com/assets/images/logo-white.png" class="img-fluid" width="190px" alt="Just Together - Kurumsal Logo White">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xlwd-2 mb-6">
+                    <h3 class="ftHeading text-white mb-4">Just Together</h3>
+                    <ul class="list-unstyled ftsrLinksList mb-0">
+                        <li>
+                            <a href="https://justogether.com/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://justogether.com/nedir">Nedir ?</a>
+                        </li>
+                        <li>
+                            <a href="https://justogether.com/ekibimiz">Ekibimiz</a>
+                        </li>
+                        <li>
+                            <a href="https://justogether.com/calistay">Çalıştay</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 col-xl-2 col-xlwd-3 mb-6">
+                    <div class="pl-xlwd-11">
+                        <h3 class="ftHeading text-white mb-4">Hızlı Erişim</h3>
+                        <ul class="list-unstyled ftsrLinksList mb-0">
+                            <li>
+                                <a href="https://justogether.com/fotograf-galerisi">Fotoğraf Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/video-galerisi">Video Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/sozlesme/gizlilik-sozlesmesi">Gizlilik Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/sozlesme/kvkk-aydinlatma-metni">KVKK Aydınlatma Metni</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/sozlesme/cerez-politikasi">Çerez Politikası</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- pageFooter -->
+    <footer id="pageFooter" class="text-center bg-dark pt-6 pb-3 pt-md-8 pb-md-5">
+        <div class="container">
+            <p>Just Together 2025   &copy;  <br class="d-md-none"><b style="color: #fff;">Tüm Hakkı Saklıdır.</b></p>
+        </div>
+        <a target="_blank" href="https://vivarteza.com/">
+            <img draggable="false" style="height: 33px;" src="https://dekmeb.org/assets/images/vivarteza-web.png">
+        </a>
+    </footer>
+</div>
+</div><!--footer area end-->
+
+
+
+
+
+<!-- JS
+============================================ -->
+
+
+<a id="top-button"></a>
+
+<!-- include jQuery library -->
+<script src="https://justogether.com/assets/js/jquery-3.4.1.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="https://justogether.com/assets/js/jqueryCustom.js"></script>
+<!-- include plugins JavaScript -->
+<script src="https://justogether.com/assets/js/plugins.js"></script>
+<!-- include fontAwesome -->
+<script src="https://kit.fontawesome.com/391f644c42.js"></script>
+
+
+
+<script>
+    var btn = $('#top-button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+</script>
+</body>
+
+</html>

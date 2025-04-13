@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="tr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Çalıştay - Just Together</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<!-- inlcude google cabin font cdn link -->
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!-- include the site bootstrap stylesheet -->
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<!-- include the site stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- include theme color setting stylesheet -->
+<link rel="stylesheet" href="assets/css/colors.css">
+<!-- include the site responsive stylesheet -->
+<link rel="stylesheet" href="assets/css/responsive.css">
+<!-- inlcude google nunito sans font cdn link -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest.html">
+
+
+<style>
+	.navbar-light .navbar-nav .nav-link
+	 {
+    padding: 13px 15px 12px;
+    width: 100%;
+}
+	
+    #top-button {
+        display: inline-block;
+        background-color: #363737;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s,
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        text-decoration: none;
+
+    }
+    #top-button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+    #top-button:hover {
+        cursor: pointer;
+        background-color: #9d9d9d;
+    }
+    #top-button:active {
+        background-color: #9d9d9d;
+    }
+    #top-button.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+	
+</style>
+
+<body>
+<div id="pageWrapper">
+
+    <div class="phStickyWrap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <header id="pageHeader" class="bg-white">
+    <div class="hdFixerWrap py-2 py-md-6 py-xl-3 sSticky bg-white" >
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light p-0">
+                <div class="logo flex-shrink-0 mr-2 mr-xl-16 mr-wlwd-36">
+                    <a href="index.html">
+                        <img draggable="false" src="assets/images/logo.png" class="img-fluid" width="500" alt="Just Together Logo">
+                    </a>
+                </div>
+                <div class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
+                    <div class="collapse navbar-collapse pageMainNavCollapse mt-2 mt-md-0" id="pageMainNavCollapse">
+                        <ul class="navbar-nav mainNavigation">
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hakkımızda</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="nedir.html">Just Together Nedir ?</a></li>
+                                        <li><a class="dropdown-item" href="ekibimiz.html">Ekibimiz</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+    						<a class="nav-link dropdown-toggle dropIcn" href="calistay.html" role="button"
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+       onclick="if(!event.target.closest('.dropdown-menu')){ window.location.href='https://justogether.com/calistay'; }">
+        Çalıştay</a>
+    							<div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+        							<ul class="list-unstyled mb-0 hdDropdownList">
+            								<li><a href="calistay.html#amac">Amaç</a></li>
+            								<li><a href="calistay.html#yontem">Yöntem</a></li>
+            								<li><a href="calistay.html#akis">Akış</a></li>
+            								<li><a href="calistay.html#egitimciler">Eğitimciler</a></li>
+            								<li><a href="calistay.html#panelistler">Panelistler</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeri</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="fotograf-galerisi.html">Fotoğraf Galerisi</a></li>
+                                        <li><a class="dropdown-item" href="video-galerisi.html">Video Galerisi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/yakinda" >Haberler</a>
+                            </li>-->
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="blog.html" >Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="iletisim.html" >İletişim</a>
+                            </li>
+                        </ul>
+							<a href="https://forms.gle/eHgkKyL5WCJd8vUK8" target="_blank" class="btn btn-outline-secondary bdrWidthAlter ml-4 ml-sm-6 btnHd d-none d-lg-block text-capitalize position-relative border-0 p-0" data-hover="Gönüllü Başvuru Formu">
+    <span class="d-block btnText">Gönüllü Başvuru Formu</span>
+</a>
+
+								<button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                    </div>
+                </div>
+				<div class="hdRighterWrap d-flex align-items-center justify-content-end" hidden="">
+                    <button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                    && 
+                    location.hostname == this.hostname
+                ) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 120
+                        }, 700);
+                    }
+                }
+            });
+        });
+    </script>
+
+<main>
+<header class="pageMainHead d-flex position-relative bgCover w-100 text-white" style="background-image: url(assets/images/breadcrumb.jpg)">
+    <div class="alignHolder d-flex w-100 align-items-center">
+        <div class="align w-100 position-relative">
+            <div class="container">
+                <h1 class="text-white mb-2">Çalıştay</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Çalıştay</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- One Page İçerik -->
+<section id="amac" class="pt-7 pb-7">
+    <main>
+    <div class="container py-5">
+        <h1>Çalıştayın Amacı</h1>
+        <p>Ulusal ve uluslararası kriz bölgelerinde ilk yardım, resmî kurumlar ve sivil toplum örgütleri tarafından yapılmaktadır. Akut müdahalelerin ardından düzenli olarak takip edilmesi ve desteklenmesi gereken dezavantajlı gruplar ortaya çıkmaktadır.
+
+Dezavantajlı gruplar içerisinde çocukların sosyal hayata entegrasyonu ve rehabilitasyonu önem arz etmektedir. İşbu entegrasyon ve rehabilitasyonun gerçekleştirilebilmesi akut mekân organizasyonu ile mümkündür.
+
+Çalıştayda yıkım sonrası şehirlerin yeniden inşa sürecinde dezavantajlı çocukların fiziksel ve zihinsel rehabilitasyonlarının mekân tasarımlarıyla sağlanması amaçlanmaktadır.</p>
+    </div>
+</main>
+</section>
+
+<section id="yontem" class="pt-7 pb-7">
+    <main>
+    <div class="container py-5">
+        <h1>Çalıştayın Yöntemi</h1>
+        <h3>Eğitim: </h3>
+		<p>Sunum ve panel aracılığıyla genel çerçeve çizilecektir. Konuşmalar belirlenen konuklar tarafından 15 dakikalık sunumlar olarak yapılacaktır.
+		</p>
+		<h3>Tespitlerin Yapılması: </h3>
+		<p>Sunular ve kılavuz sorular ışığında ihtiyaç tespitlerinin yapılması beklenmektedir.</p>
+
+		<h3>Tartışma - Fikir Alışverişi:</h3> 
+		<p>Grup çalışması halinde farklı masalarda gerçekleştirilecektir.</p>
+
+		<h3>Teorik Üretim: </h3> 
+		<p> Sosyal bilimciler, sağlıkçılar ve tasarımcıların birlikte fikir üretimleri nihayetinde tasarı ve konseptlerini belirlemeleri beklenmektedir.</p>
+
+		<h3>Pratik Üretim: </h3> 
+		<p>Tasarımcıların aktif rol aldığı bu safhada grupların konseptleri ile uyumlu tasarımlar ortaya koymaları beklenmektedir.</p>
+
+		<h3>Sonuç: </h3>
+		<p>Her bir grubun nihai tasarımlarını sunması beklenmektedir.</p>
+    </div>
+</main></section>
+
+<section id="akis" class="pt-7 pb-7">
+    
+<main>
+    <div class="container py-5">
+        <h1>Program Akışı</h1>
+        <img src="assets/images/akış.jpg" class="img-fluid" alt="Program Akışı">
+    </div>
+</main>
+</section>
+
+<section id="egitimciler" class="pt-7 pb-7">
+    <main>
+    <div class="container py-5">
+        <h1>Eğitimciler</h1>
+		<p> Çalıştayımıza katkı sağlayacak eğitimcilerimiz </p>
+        <img src="assets/images/egitimciler.jpg" class="img-fluid" alt="Eğitimciler" style="max-width: 100%; height: auto; object-fit: cover;">
+	</div>
+	<div class="container py-5">
+		<h1>S.Aybüke Uygur</h1>
+		<h2>AID(Uluslarası Doktorlar Derneği)</h2>
+		<p> Marmara Üniversitesi Fransızca Kamu Yönetimi bölümünden mezun oldu. Lisans tezinde “İnsani Diplomasi ve Yeni Sömürgecilik” ilişkisini inceledi. İstanbul’da sosyal uyum ve koruma projelerinde ve deprem bölgesinde uygulanan Psikososyal Destek Programlarında (MHPSS) proje koordinatörü olarak görev yapmaktadır. </p>
+	</div>
+	<div class="container py-5">
+		<h1>Ege Sevinçli</h1>
+		<h2>Superpool</h2>
+		<p> Mimar Sinan Güzel Sanatlar Üniversitesi Sosyoloji bölümünden mezun oldu. 2019’dan beri Superpool tasarım stüdyosunda çalışmaktadır. Ülkemizin oyun parkları özelinde ve uluslararası standartta ürün güvenlik denetimi hizmeti vermektedir. </p>
+	</div>
+	<div class="container py-5">
+		<h1>Derya İyikul</h1>
+		<h2>NPGI Türkiye</h2>
+		<p> İstanbul Teknik Üniversitesi İç Mimarlık mezunu. 2019’da İTÜ’de Mimarlık yüksek lisansını tamamladı. Superpool Tasarım Stüdyosu’nun lider mimarı. Ayrıca Nordic Playground Institute Türkiye’nin ortaklığını yürütmekte. </p>
+	</div>
+	<div class="container py-5">
+		<h1>Merve Özdemir</h1>
+		<h2>Uzman Psikolog</h2>
+		<p> 2012 yılında İstanbul Kültür Üniversitesi Psikoloji bölümünden mezun oldu. Klinik psikoloji alanında “Çocuk Merkezli Oyun Terapisinin Çocuklar Üzerindeki İyileştirici Etkisi” konulu tezi ile yüksek lisansını tamamladı. 2012 yılından bu yana terapist olarak çalışmaktadır. Aktif projeler, eğitim kurumlarına danışmanlık ve süpervizörlük alanlarında çalışmalarına devam etmektedir. </p>
+	</div>
+	<div class="container py-5">
+		<h1>Mevlit Yurtseven</h1>
+		<h2>AID(Uluslarası Doktorlar Derneği)</h2>
+		<p> 2011 yılında kurulan Uluslararası Doktorlar Derneği’nin kurucu başkanıdır. Dernek din, dil, ırk, etnik köken ayrımı yapmadan tüm dünyada tıbbi çalışmalar yürütmektedir. 2011 yılında İstanbul’da kurulduğundan beri sağlık hizmetlerinin yetersiz olduğu coğrafyalarda sağlık yardımı ve destek faaliyetleri yürütmektedir. </p>
+    </div>
+</main>
+</section>
+
+<section id="panelistler" class="pt-7 pb-7">
+    <main>
+    <div class="container py-5">
+        <h1>Panelistler</h1>
+        <img src="assets/images/panelistler.jpg" class="img-fluid" alt="Panelistler">
+	</div>
+	<div class="container py-5">
+		<h1>Beyza Gürdoğan</h1>
+		<h2>Superpool</h2>
+		<p> Kent tasarımcısı, mimar. Viyana Teknik Üniversitesi’nden mezun oldu ve Hamburg Hafencity Üniversitesi'nde kent tasarımı yüksek lisansını tamamladı. 2017’den beri Superpool’da Urban95 programında program koordinatörü olarak çalışıyor. </p>
+	</div>
+	<div class="container py-5">
+		<h1>M. Furkan Cinisli</h1>
+		<h2>Uzman Psikolog</h2>
+		<p> 2017 yılında İstanbul Şehir Üniversitesi İslami İlimler Fakültesi’nden, 2018 yılında ise aynı üniversitenin Psikoloji Bölümünden mezun oldu. İlk yüksek lisansını 29 Mayıs Üniversitesi’nde tefsir alanında, ikinci yüksek lisansını ise İbn Haldun Üniversitesinde Klinik Psikoloji bölümünde tamamladı. 2022 yılında Melbourne Üniversitesi’nde Narrative Terapi ve Toplum Çalışmaları ile üçüncü yüksek lisansını tamamladı. Akademik ilgi alanları arasında Travma ve Teorik Psikoloji yer almaktadır. Psikoloji ve Psikoterapi Araştırmaları Derneği üyesidir. İstanbul Sabahattin Zaim Üniversitesi’nde araştırma görevlisi olarak akademik çalışmalarına devam etmektedir. </p>
+	</div>
+	<div class="container py-5">
+		<h1>Mustafa Şirin</h1>
+		<h2>Çocuk Vakfı</h2>
+		<p> İletişim alanında yüksek öğrenim gördü. 1977’de TRT’de görev aldı. Aynı kurumda radyo ve televizyon çocuk programları prodüktörlüğü ve danışmanlığı yaptı; yöneticilik görevlerinde bulundu. İstanbul Üniversitesi’nde (1986-1991) İletişim; Marmara Üniversitesi’nde (2008-2012) Çocuk Edebiyatı dersleri verdi. 1990 yılında Çocuk Vakfı’nı kurdu. Çocuk Edebiyatı, Çocuk Hakları, Çocuk Kültürü ve Sanatına yönelik çalışmalar içinde yer aldı. Türkiye’de ilk kez çocuk ve yetişkin delegelerin katılımıyla gerçekleşen I. İstanbul Çocuk Kurultayı’nı (2000) organize etti. Birçok ulusal ve uluslararası etkinlikte yer aldı. Çocuk Edebiyatı Büyük Ödülü (2015) sahibidir. </p>
+	</div>
+</main>
+</section>
+
+</main>
+
+<div class="ftAreaWrap position-relative bg-gDark fontAlter" style="width: 100%;
+	height: 100%;
+	background-image: url(assets/images/shape.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;">
+    <aside class="ftConnectAside pt-4 pb-3 pt-md-7 pb-md-7 text-center text-md-left" >
+        <div class="container" >
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7">
+                    <nav class="ftcaNav mb-4 mb-lg-0">
+                        <p>Just Together - Design For Humanity</p>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="ctConnectWrap d-sm-flex justify-content-sm-center justify-content-lg-end align-items-sm-center">
+                        <strong class="title flex-shrink-0 mb-1 font-weight-normal mr-sm-3 d-block">Sosyal Medya Hesaplarımız</strong>
+                        <ul class="list-unstyled socialNetworks ftSocialNetworks d-flex flex-wrap justify-content-center justify-content-sm-end mb-0">
+                                                        <li>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=61554677020552">
+                                    <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
+                                </a>
+                            </li>
+                                                                                                                <li>
+                                <a target="_blank" href="https://www.instagram.com/_justtogether/">
+                                    <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
+                                </a>
+                            </li>
+                                                                                        <li>
+                                    <a target="_blank" href="https://www.linkedin.com/showcase/justogether/">
+                                        <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+                                    </a>
+                                </li>
+                                                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- footerAside -->
+    <aside class="footerAside pt-9 pb-sm-2 pt-xl-14 pb-xl-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-5 col-xl-3 mb-6">
+                    <div class="ftLogo  mb-6">
+                            <img draggable="false" src="assets/images/logo-white.png" class="img-fluid" width="190px" alt="Just Together - Kurumsal Logo White">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xlwd-2 mb-6">
+                    <h3 class="ftHeading text-white mb-4">Just Together</h3>
+                    <ul class="list-unstyled ftsrLinksList mb-0">
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="nedir.html">Nedir ?</a>
+                        </li>
+                        <li>
+                            <a href="ekibimiz.html">Ekibimiz</a>
+                        </li>
+                        <li>
+                            <a href="calistay.html">Çalıştay</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 col-xl-2 col-xlwd-3 mb-6">
+                    <div class="pl-xlwd-11">
+                        <h3 class="ftHeading text-white mb-4">Hızlı Erişim</h3>
+                        <ul class="list-unstyled ftsrLinksList mb-0">
+                            <li>
+                                <a href="fotograf-galerisi.html">Fotoğraf Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="video-galerisi.html">Video Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="sozlesme/gizlilik-sozlesmesi.html">Gizlilik Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a href="sozlesme/kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a>
+                            </li>
+                            <li>
+                                <a href="sozlesme/cerez-politikasi.html">Çerez Politikası</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- pageFooter -->
+    <footer id="pageFooter" class="text-center bg-dark pt-6 pb-3 pt-md-8 pb-md-5">
+        <div class="container">
+            <p>Just Together 2025   &copy;  <br class="d-md-none"><b style="color: #fff;">Tüm Hakkı Saklıdır.</b></p>
+        </div>
+        <a target="_blank" href="https://vivarteza.com/">
+            <img draggable="false" style="height: 33px;" src="https://dekmeb.org/assets/images/vivarteza-web.png">
+        </a>
+    </footer>
+</div>
+</div>
+<a id="top-button"></a>
+
+<!-- include jQuery library -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="assets/js/jqueryCustom.js"></script>
+<!-- include plugins JavaScript -->
+<script src="assets/js/plugins.js"></script>
+<!-- include fontAwesome -->
+<script src="https://kit.fontawesome.com/391f644c42.js"></script>
+
+
+
+<script>
+    var btn = $('#top-button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+</script>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<!-- set the encoding of your site -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- set the page title -->
+<title>Blog - Just Together</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<!-- inlcude google cabin font cdn link -->
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!-- include the site bootstrap stylesheet -->
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<!-- include the site stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- include theme color setting stylesheet -->
+<link rel="stylesheet" href="assets/css/colors.css">
+<!-- include the site responsive stylesheet -->
+<link rel="stylesheet" href="assets/css/responsive.css">
+<!-- inlcude google nunito sans font cdn link -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest.html">
+
+
+<style>
+	.navbar-light .navbar-nav .nav-link
+	 {
+    padding: 13px 15px 12px;
+    width: 100%;
+}
+	
+    #top-button {
+        display: inline-block;
+        background-color: #363737;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s,
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        text-decoration: none;
+
+    }
+    #top-button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+    #top-button:hover {
+        cursor: pointer;
+        background-color: #9d9d9d;
+    }
+    #top-button:active {
+        background-color: #9d9d9d;
+    }
+    #top-button.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+	
+</style>
+<body>
+
+<style>
+
+    .contact-area .contact-box {
+        padding: 40px;
+        border: 1px solid #DDD;
+        border-radius: 3px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #f7f8fa;
+    }
+    .contact-area .contact-box i {
+        font-size: 50px;
+        line-height: 1;
+        color: #f17e01;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+    .contact-area .contact-box .box h3, {
+        font-size: 15px;
+        font-weight: 600;
+        color: #222222;
+    }
+    .contact-area .contact-box .box a, .contact-area .contact-box .box p{
+        font-size: 13px;
+        font-weight: 400;
+        color: #222222;
+    }
+</style>
+
+
+
+        <!-- pageHeader -->
+        <header id="pageHeader" class="bg-white">
+    <div class="hdFixerWrap py-2 py-md-6 py-xl-3 sSticky bg-white" >
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light p-0">
+                <div class="logo flex-shrink-0 mr-2 mr-xl-16 mr-wlwd-36">
+                    <a href="index.html">
+                        <img draggable="false" src="assets/images/logo.png" class="img-fluid" width="500" alt="Just Together Logo">
+                    </a>
+                </div>
+                <div class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
+                    <div class="collapse navbar-collapse pageMainNavCollapse mt-2 mt-md-0" id="pageMainNavCollapse">
+                        <ul class="navbar-nav mainNavigation">
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hakkımızda</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="nedir.html">Just Together Nedir ?</a></li>
+                                        <li><a class="dropdown-item" href="ekibimiz.html">Ekibimiz</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+    						<a class="nav-link dropdown-toggle dropIcn" href="calistay.html" role="button"
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+       onclick="if(!event.target.closest('.dropdown-menu')){ window.location.href='https://justogether.com/calistay'; }">
+        Çalıştay</a>
+    							<div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+        							<ul class="list-unstyled mb-0 hdDropdownList">
+            								<li><a href="calistay.html#amac">Amaç</a></li>
+            								<li><a href="calistay.html#yontem">Yöntem</a></li>
+            								<li><a href="calistay.html#akis">Akış</a></li>
+            								<li><a href="calistay.html#egitimciler">Eğitimciler</a></li>
+            								<li><a href="calistay.html#panelistler">Panelistler</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeri</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="fotograf-galerisi.html">Fotoğraf Galerisi</a></li>
+                                        <li><a class="dropdown-item" href="video-galerisi.html">Video Galerisi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/yakinda" >Haberler</a>
+                            </li>-->
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="blog.html" >Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="iletisim.html" >İletişim</a>
+                            </li>
+                        </ul>
+							<a href="https://forms.gle/eHgkKyL5WCJd8vUK8" target="_blank" class="btn btn-outline-secondary bdrWidthAlter ml-4 ml-sm-6 btnHd d-none d-lg-block text-capitalize position-relative border-0 p-0" data-hover="Gönüllü Başvuru Formu">
+    <span class="d-block btnText">Gönüllü Başvuru Formu</span>
+</a>
+
+								<button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                    </div>
+                </div>
+				<div class="hdRighterWrap d-flex align-items-center justify-content-end" hidden="">
+                    <button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    </div>
+    <main>
+        <header class="pageMainHead d-flex position-relative bgCover w-100 text-white" style="background-image: url(http://justogether.com/assets/images/breadcrumb.jpg">
+            <div class="alignHolder d-flex w-100 align-items-center">
+                <div class="align w-100 position-relative">
+                    <div class="container">
+                        <h1 class="text-white mb-2">Bloglar</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                                <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+<section class="ItemfullBlock pt-7 pb-7 pt-md-10 pb-md-9 pt-lg-14 pb-lg-13 pt-xl-22 pb-xl-19">
+    <div class="container">
+        <ul class="list-unstyled ifbFiltersList d-flex isoFiltersList mb-lg-12 fontAlter flex-wrap justify-content-center">
+            <li class="active">
+                <a href="javascript:void(0);" data-filter="*">Hepsini Göster</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-filter=".kultur">Kültür Envanteri</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-filter=".isgal">İşgal Mimarisi</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-filter=".haber">Haberler</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" data-filter=".etkinlik">Etkinlikler</a>
+            </li>
+			<li>
+                <a href="javascript:void(0);" data-filter=".yazi">Yazılar</a>
+            </li>
+        </ul>
+        <div class="row">
+         <div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-literatur---dr--celal-fedai-ile-holokost-endustrisi-hakkinda-ne-konustuk-.html">
+                <img src="yonetim/uploads/blog_v/1737969646907.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-literatur---dr--celal-fedai-ile-holokost-endustrisi-hakkinda-ne-konustuk-.html">JT Literatür - Dr. Celal Fedai ile Holokost Endüstrisi Hakkında Ne Konuştuk?</a>
+            </h3>
+            <a href="blog-detay/jt-literatur---dr--celal-fedai-ile-holokost-endustrisi-hakkinda-ne-konustuk-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/insan--imkân-ve-insâ.html">
+                <img src="yonetim/uploads/blog_v/1737970053031--1-.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/insan--imkân-ve-insâ.html">İnsan, İmkân ve İnşâ</a>
+            </h3>
+            <a href="blog-detay/insan--imkân-ve-insâ.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-calistay---bunlari-biliyor-musunuz-.html">
+                <img src="yonetim/uploads/blog_v/tr-1--1-.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-calistay---bunlari-biliyor-musunuz-.html">JT Çalıştay - Bunları Biliyor Musunuz?</a>
+            </h3>
+            <a href="blog-detay/jt-calistay---bunlari-biliyor-musunuz-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-calistay---bunlari-biliyor-musunuz-.html">
+                <img src="yonetim/uploads/blog_v/tr-1.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-calistay---bunlari-biliyor-musunuz-.html">JT Çalıştay - Bunları Biliyor Musunuz?</a>
+            </h3>
+            <a href="blog-detay/jt-calistay---bunlari-biliyor-musunuz-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/bir-iyilestirici-olarak-mekÂn:-yikim-sonrasi-dezavantajli-cocuklar-icin-mekân-rehabilitesi-calistayi.html">
+                <img src="yonetim/uploads/blog_v/acik-cagri-post-01.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/bir-iyilestirici-olarak-mekÂn:-yikim-sonrasi-dezavantajli-cocuklar-icin-mekân-rehabilitesi-calistayi.html">BİR İYİLEŞTİRİCİ OLARAK MEKÂN: Yıkım Sonrası Dezavantajlı Çocuklar İçin Mekân Rehabilitesi Çalıştayı</a>
+            </h3>
+            <a href="blog-detay/bir-iyilestirici-olarak-mekÂn:-yikim-sonrasi-dezavantajli-cocuklar-icin-mekân-rehabilitesi-calistayi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-atmosfer---kutsal-isgal-belgesel-film-gosterimi-ve-soylesi.html">
+                <img src="yonetim/uploads/blog_v/1737969950423.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-atmosfer---kutsal-isgal-belgesel-film-gosterimi-ve-soylesi.html">JT Atmosfer - Kutsal İşgal Belgesel Film Gösterimi ve Söyleşi</a>
+            </h3>
+            <a href="blog-detay/jt-atmosfer---kutsal-isgal-belgesel-film-gosterimi-ve-soylesi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-atmosfer---kutsal-isgal-belgesel-film-gosterimi-ve-soylesi.html">
+                <img src="yonetim/uploads/blog_v/1737969797081.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-atmosfer---kutsal-isgal-belgesel-film-gosterimi-ve-soylesi.html">JT Atmosfer - Kutsal İşgal Belgesel Film Gösterimi ve Söyleşi</a>
+            </h3>
+            <a href="blog-detay/jt-atmosfer---kutsal-isgal-belgesel-film-gosterimi-ve-soylesi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/sizden-gelenler.html">
+                <img src="yonetim/uploads/blog_v/1737969724937.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/sizden-gelenler.html">Sizden Gelenler</a>
+            </h3>
+            <a href="blog-detay/sizden-gelenler.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-ceviri---gazze-icin-mimarlar-moduler-klinik-tasarliyor.html">
+                <img src="yonetim/uploads/blog_v/1737969581310.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-ceviri---gazze-icin-mimarlar-moduler-klinik-tasarliyor.html">JT Çeviri - Gazze için Mimarlar Modüler Klinik Tasarlıyor</a>
+            </h3>
+            <a href="blog-detay/jt-ceviri---gazze-icin-mimarlar-moduler-klinik-tasarliyor.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-kroki---isgal-topraklari-nin-ozgurlugu-icin-ciz.html">
+                <img src="yonetim/uploads/blog_v/1737969574024.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-kroki---isgal-topraklari-nin-ozgurlugu-icin-ciz.html">JT Kroki - İşgal Toprakları'nın Özgürlüğü için Çiz</a>
+            </h3>
+            <a href="blog-detay/jt-kroki---isgal-topraklari-nin-ozgurlugu-icin-ciz.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-literatur---holokost-endustrisi-yahudi-acilarinin-istismari.html">
+                <img src="yonetim/uploads/blog_v/1737969565046.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-literatur---holokost-endustrisi-yahudi-acilarinin-istismari.html">JT Literatür - Holokost Endüstrisi Yahudi Acılarının İstismarı</a>
+            </h3>
+            <a href="blog-detay/jt-literatur---holokost-endustrisi-yahudi-acilarinin-istismari.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/isgal-mimarisi-:-ayrim-duvari-0-1.html">
+                <img src="yonetim/uploads/blog_v/1737969099472.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/isgal-mimarisi-:-ayrim-duvari-0-1.html">İşgal Mimarisi : Ayrım Duvarı 0.1</a>
+            </h3>
+            <a href="blog-detay/isgal-mimarisi-:-ayrim-duvari-0-1.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/isgal-mimarisi-:-ayirma-duvari-0-0.html">
+                <img src="yonetim/uploads/blog_v/1737969036919.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/isgal-mimarisi-:-ayirma-duvari-0-0.html">İşgal Mimarisi : Ayırma Duvarı 0.0</a>
+            </h3>
+            <a href="blog-detay/isgal-mimarisi-:-ayirma-duvari-0-0.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/anlasmalar-ve-kongreler.html">
+                <img src="yonetim/uploads/blog_v/1737968980666.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/anlasmalar-ve-kongreler.html">Anlaşmalar ve Kongreler</a>
+            </h3>
+            <a href="blog-detay/anlasmalar-ve-kongreler.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/gazze-nin-tarihi.html">
+                <img src="yonetim/uploads/blog_v/1737968960299.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/gazze-nin-tarihi.html">Gazze'nin Tarihi</a>
+            </h3>
+            <a href="blog-detay/gazze-nin-tarihi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/yahudi-gocu.html">
+                <img src="yonetim/uploads/blog_v/1737968941098.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/yahudi-gocu.html">Yahudi Göçü</a>
+            </h3>
+            <a href="blog-detay/yahudi-gocu.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/kutsal-sehri-taslastirmak.html">
+                <img src="yonetim/uploads/blog_v/1737968921184.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/kutsal-sehri-taslastirmak.html">Kutsal Şehri Taşlaştırmak</a>
+            </h3>
+            <a href="blog-detay/kutsal-sehri-taslastirmak.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/isgalin-hikayesi.html">
+                <img src="yonetim/uploads/blog_v/1737968838736.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/isgalin-hikayesi.html">İşgalin Hikayesi</a>
+            </h3>
+            <a href="blog-detay/isgalin-hikayesi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/isgal-mimari.html">
+                <img src="yonetim/uploads/blog_v/1737968850640.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/isgal-mimari.html">İşgal Mimari</a>
+            </h3>
+            <a href="blog-detay/isgal-mimari.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-literatur----holokost-endustrisi:-yahudi-acilarinin-istismari.html">
+                <img src="yonetim/uploads/blog_v/1737969592732.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-literatur----holokost-endustrisi:-yahudi-acilarinin-istismari.html">JT Literatür -  Holokost Endüstrisi: Yahudi Acılarının İstismarı</a>
+            </h3>
+            <a href="blog-detay/jt-literatur----holokost-endustrisi:-yahudi-acilarinin-istismari.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-kroki--.html">
+                <img src="yonetim/uploads/blog_v/1737969627906.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-kroki--.html">JT Kroki</a>
+            </h3>
+            <a href="blog-detay/jt-kroki--.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-meets.html">
+                <img src="yonetim/uploads/blog_v/1737968994724.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-meets.html">JT Meets</a>
+            </h3>
+            <a href="blog-detay/jt-meets.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---savasta-kentsel-yikim-ve-yeniden-insa.html">
+                <img src="yonetim/uploads/blog_v/1737969776537.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---savasta-kentsel-yikim-ve-yeniden-insa.html">JT Perspektif - Savaşta Kentsel Yıkım ve Yeniden İnşa</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---savasta-kentsel-yikim-ve-yeniden-insa.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---isgal-rejimi-karsisinda-insa-medeniyeti.html">
+                <img src="yonetim/uploads/blog_v/1737969679798.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---isgal-rejimi-karsisinda-insa-medeniyeti.html">JT Perspektif - İşgal Rejimi Karşısında İnşa Medeniyeti</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---isgal-rejimi-karsisinda-insa-medeniyeti.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/gazze-de-zaman.html">
+                <img src="yonetim/uploads/blog_v/tr1--1-.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/gazze-de-zaman.html">Gazze'de Zaman</a>
+            </h3>
+            <a href="blog-detay/gazze-de-zaman.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-literatur---direnisin-kokleri:-1936-1939-filistin-ayaklanmasi.html">
+                <img src="yonetim/uploads/blog_v/1737970079585.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-literatur---direnisin-kokleri:-1936-1939-filistin-ayaklanmasi.html">JT Literatür - Direnişin Kökleri: 1936-1939 Filistin Ayaklanması</a>
+            </h3>
+            <a href="blog-detay/jt-literatur---direnisin-kokleri:-1936-1939-filistin-ayaklanmasi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 haber">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---kuresellesme-duzleminde-ortadogu-uzerine-mulahazalar.html">
+                <img src="yonetim/uploads/blog_v/1737970030068.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---kuresellesme-duzleminde-ortadogu-uzerine-mulahazalar.html">JT Perspektif - Küreselleşme Düzleminde Ortadoğu Üzerine Mülahazalar</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---kuresellesme-duzleminde-ortadogu-uzerine-mulahazalar.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-literatur---direnisin-kokleri:-1936-1939-filistin-ayaklanmasi.html">
+                <img src="yonetim/uploads/blog_v/1737970021222.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-literatur---direnisin-kokleri:-1936-1939-filistin-ayaklanmasi.html">JT Literatür - Direnişin Kökleri: 1936-1939 Filistin Ayaklanması</a>
+            </h3>
+            <a href="blog-detay/jt-literatur---direnisin-kokleri:-1936-1939-filistin-ayaklanmasi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/dikkatiniz-dagildi-mi--dagitildi-mi-.html">
+                <img src="yonetim/uploads/blog_v/1737970005635.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/dikkatiniz-dagildi-mi--dagitildi-mi-.html">JT Çeviri - Dikkatiniz Dağıldı mı, Dağıtıldı mı?</a>
+            </h3>
+            <a href="blog-detay/dikkatiniz-dagildi-mi--dagitildi-mi-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/kuresellesme-duzleminde-ortadogu-uzerine-mulahazalar.html">
+                <img src="yonetim/uploads/blog_v/1737969999683.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/kuresellesme-duzleminde-ortadogu-uzerine-mulahazalar.html">JT Perspektif - Küreselleşme Düzleminde Ortadoğu Üzerine Mülahazalar</a>
+            </h3>
+            <a href="blog-detay/kuresellesme-duzleminde-ortadogu-uzerine-mulahazalar.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/ne-icin-mimarlik-.html">
+                <img src="yonetim/uploads/blog_v/11.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/ne-icin-mimarlik-.html">Ne İçin Mimarlık?</a>
+            </h3>
+            <a href="blog-detay/ne-icin-mimarlik-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/filistin-uzerine-konusmalar---noam-chomsky---ilan-pappe.html">
+                <img src="yonetim/uploads/blog_v/whatsapp-gorsel-2024-12-05-saat-20-13-46-79d8e077.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/filistin-uzerine-konusmalar---noam-chomsky---ilan-pappe.html">Filistin Üzerine Konuşmalar | Noam Chomsky & Ilan Pappe</a>
+            </h3>
+            <a href="blog-detay/filistin-uzerine-konusmalar---noam-chomsky---ilan-pappe.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-what-does-.html">
+                <img src="yonetim/uploads/blog_v/jt-timeline-yeniden---ingilizce-12.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-what-does-.html">JT What Does?</a>
+            </h3>
+            <a href="blog-detay/jt-what-does-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-ne-yapar-.html">
+                <img src="yonetim/uploads/blog_v/jt-timeline-yeniden---ingilizce-06.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-ne-yapar-.html">JT Ne Yapar?</a>
+            </h3>
+            <a href="blog-detay/jt-ne-yapar-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---prof--dr--ugur-tanyeli-ile--savasta-kentsel-yikim-ve-yeniden-insa-.html">
+                <img src="yonetim/uploads/blog_v/jt-post-ugurtanyeli.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---prof--dr--ugur-tanyeli-ile--savasta-kentsel-yikim-ve-yeniden-insa-.html">JT Perspektif - Prof. Dr. Uğur Tanyeli ile "Savaşta Kentsel Yıkım ve Yeniden İnşa"</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---prof--dr--ugur-tanyeli-ile--savasta-kentsel-yikim-ve-yeniden-insa-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---prof--dr--sadettin-okten-ile--isgal-rejimi-karsisinda-insa-medeniyeti-.html">
+                <img src="yonetim/uploads/blog_v/saadettin-okten-08.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---prof--dr--sadettin-okten-ile--isgal-rejimi-karsisinda-insa-medeniyeti-.html">JT Perspektif - Prof. Dr. Sadettin Ökten ile "İşgal Rejimi Karşısında İnşa Medeniyeti"</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---prof--dr--sadettin-okten-ile--isgal-rejimi-karsisinda-insa-medeniyeti-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---dr--ali-ihsan-aydin-ile-neler-konustuk-.html">
+                <img src="yonetim/uploads/blog_v/1737969551864.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---dr--ali-ihsan-aydin-ile-neler-konustuk-.html">JT Perspektif - Dr. Ali İhsan Aydın ile Neler Konuştuk?</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---dr--ali-ihsan-aydin-ile-neler-konustuk-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---dr--ali-ihsan-aydin-ile---osmanli-kudus-unde-mulkiyet-donusumu-.html">
+                <img src="yonetim/uploads/blog_v/jt.PNG" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---dr--ali-ihsan-aydin-ile---osmanli-kudus-unde-mulkiyet-donusumu-.html">JT Perspektif - Dr. Ali İhsan Aydın ile " Osmanlı Kudüs'ünde Mülkiyet Dönüşümü"</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---dr--ali-ihsan-aydin-ile---osmanli-kudus-unde-mulkiyet-donusumu-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 isgal">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/isgal-mimarisi:-allenby-koprusu.html">
+                <img src="yonetim/uploads/blog_v/kopru-tr-son.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/isgal-mimarisi:-allenby-koprusu.html">İşgal Mimarisi: Allenby Köprüsü</a>
+            </h3>
+            <a href="blog-detay/isgal-mimarisi:-allenby-koprusu.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/7-ekimden-bu-yana---.html">
+                <img src="yonetim/uploads/blog_v/2--1-.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/7-ekimden-bu-yana---.html">7 Ekimden Bu Yana...</a>
+            </h3>
+            <a href="blog-detay/7-ekimden-bu-yana---.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/since-october-7---.html">
+                <img src="yonetim/uploads/blog_v/1--4-.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/since-october-7---.html">Since October 7...</a>
+            </h3>
+            <a href="blog-detay/since-october-7---.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-dictionary---space.html">
+                <img src="yonetim/uploads/blog_v/1--3--kopya.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-dictionary---space.html">JT Dictionary - Space</a>
+            </h3>
+            <a href="blog-detay/jt-dictionary---space.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-sozluk---mekan.html">
+                <img src="yonetim/uploads/blog_v/2-kopya.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-sozluk---mekan.html">JT Sözlük - Mekan</a>
+            </h3>
+            <a href="blog-detay/jt-sozluk---mekan.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-perspektif---ahmet-faruk-asa.html">
+                <img src="yonetim/uploads/blog_v/jt---ramazan-programi-10.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-perspektif---ahmet-faruk-asa.html">JT Perspektif / Ahmet Faruk Asa</a>
+            </h3>
+            <a href="blog-detay/jt-perspektif---ahmet-faruk-asa.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/i-wish-children-didn-t-die-.html">
+                <img src="yonetim/uploads/blog_v/12.PNG" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/i-wish-children-didn-t-die-.html">I wish Children didn't Die!</a>
+            </h3>
+            <a href="blog-detay/i-wish-children-didn-t-die-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/keske-cocuklar-olmeseydi-.html">
+                <img src="yonetim/uploads/blog_v/ghassan-kanafani.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/keske-cocuklar-olmeseydi-.html">Keşke Çocuklar Ölmeseydi!</a>
+            </h3>
+            <a href="blog-detay/keske-cocuklar-olmeseydi-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/what-is-jt-.html">
+                <img src="yonetim/uploads/blog_v/2.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/what-is-jt-.html">What is JT?</a>
+            </h3>
+            <a href="blog-detay/what-is-jt-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/jt-nedir-.html">
+                <img src="yonetim/uploads/blog_v/1.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/jt-nedir-.html">JT Nedir?</a>
+            </h3>
+            <a href="blog-detay/jt-nedir-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 kultur">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/halillurrahman-cami---el-halil-kenti.html">
+                <img src="yonetim/uploads/blog_v/basliksiz-1.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/halillurrahman-cami---el-halil-kenti.html">Halillurrahman Cami & El-Halil Kenti</a>
+            </h3>
+            <a href="blog-detay/halillurrahman-cami---el-halil-kenti.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 kultur">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/al-ghussein-evi.html">
+                <img src="yonetim/uploads/blog_v/1--1-.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/al-ghussein-evi.html">Al-Ghussein Evi</a>
+            </h3>
+            <a href="blog-detay/al-ghussein-evi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 kultur">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/omer-cami.html">
+                <img src="yonetim/uploads/blog_v/11.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/omer-cami.html">Ömer Cami</a>
+            </h3>
+            <a href="blog-detay/omer-cami.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 kultur">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/kultur-envanteri:-st--hilarion.html">
+                <img src="yonetim/uploads/blog_v/tell-um-amr.PNG" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/kultur-envanteri:-st--hilarion.html">Kültür Envanteri: St. Hilarion</a>
+            </h3>
+            <a href="blog-detay/kultur-envanteri:-st--hilarion.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 kultur">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/saint-porphyrius-kilisesi.html">
+                <img src="yonetim/uploads/blog_v/saint.PNG" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/saint-porphyrius-kilisesi.html">Saint Porphyrius Kilisesi</a>
+            </h3>
+            <a href="blog-detay/saint-porphyrius-kilisesi.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/eko-kirim.html">
+                <img src="yonetim/uploads/blog_v/2000.png" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/eko-kirim.html">Eko Kırım</a>
+            </h3>
+            <a href="blog-detay/eko-kirim.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 kultur">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/cultural-heritage-of-gaza:-anthedon-harbor.html">
+                <img src="yonetim/uploads/blog_v/1737969272730--1-.jpeg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/cultural-heritage-of-gaza:-anthedon-harbor.html">Cultural Heritage of Gaza: Anthedon Harbor</a>
+            </h3>
+            <a href="blog-detay/cultural-heritage-of-gaza:-anthedon-harbor.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 yazi">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/what-do-the-lights-turn-off-in-gaza-tells-us-.html">
+                <img src="yonetim/uploads/blog_v/6.PNG" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/what-do-the-lights-turn-off-in-gaza-tells-us-.html">What do the lights turn off in Gaza tells us?</a>
+            </h3>
+            <a href="blog-detay/what-do-the-lights-turn-off-in-gaza-tells-us-.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+<div class="col-12 col-md-6 col-lg-4 col-xl-4 etkinlik">
+    <article class="npbColumn shadow bg-white mb-6 mb-xl-12">
+        <div class="imgHolder position-relative">
+            <a href="blog-detay/multeci-kamplarindan-sehirlesme-surecine---taha-kilinc-soylesimizden-notlar.html">
+                <img src="yonetim/uploads/blog_v/jt---ramazan-programi-10.jpg" class="img-fluid w-100 d-block" alt="image description">
+            </a>
+        </div>
+        <div class="npbDescriptionWrap px-5 pt-8 pb-5">
+            <h3 class="fwSemiBold mb-5">
+                <a href="blog-detay/multeci-kamplarindan-sehirlesme-surecine---taha-kilinc-soylesimizden-notlar.html">Mülteci Kamplarından Şehirleşme Sürecine - Taha Kılınç Söyleşimizden Notlar</a>
+            </h3>
+            <a href="blog-detay/multeci-kamplarindan-sehirlesme-surecine---taha-kilinc-soylesimizden-notlar.html" class="btnCr d-inline-block align-top fontAlter">İncele<i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span class="sr-only">icon</span></i></a>
+        </div>
+    </article>
+</div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <!-- ftAreaWrap -->
+    <div class="ftAreaWrap position-relative bg-gDark fontAlter" style="width: 100%;
+	height: 100%;
+	background-image: url(assets/images/shape.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;">
+    <aside class="ftConnectAside pt-4 pb-3 pt-md-7 pb-md-7 text-center text-md-left" >
+        <div class="container" >
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7">
+                    <nav class="ftcaNav mb-4 mb-lg-0">
+                        <p>Just Together - Design For Humanity</p>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="ctConnectWrap d-sm-flex justify-content-sm-center justify-content-lg-end align-items-sm-center">
+                        <strong class="title flex-shrink-0 mb-1 font-weight-normal mr-sm-3 d-block">Sosyal Medya Hesaplarımız</strong>
+                        <ul class="list-unstyled socialNetworks ftSocialNetworks d-flex flex-wrap justify-content-center justify-content-sm-end mb-0">
+                                                        <li>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=61554677020552">
+                                    <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
+                                </a>
+                            </li>
+                                                                                                                <li>
+                                <a target="_blank" href="https://www.instagram.com/_justtogether/">
+                                    <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
+                                </a>
+                            </li>
+                                                                                        <li>
+                                    <a target="_blank" href="https://www.linkedin.com/showcase/justogether/">
+                                        <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+                                    </a>
+                                </li>
+                                                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- footerAside -->
+    <aside class="footerAside pt-9 pb-sm-2 pt-xl-14 pb-xl-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-5 col-xl-3 mb-6">
+                    <div class="ftLogo  mb-6">
+                            <img draggable="false" src="assets/images/logo-white.png" class="img-fluid" width="190px" alt="Just Together - Kurumsal Logo White">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xlwd-2 mb-6">
+                    <h3 class="ftHeading text-white mb-4">Just Together</h3>
+                    <ul class="list-unstyled ftsrLinksList mb-0">
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="nedir.html">Nedir ?</a>
+                        </li>
+                        <li>
+                            <a href="ekibimiz.html">Ekibimiz</a>
+                        </li>
+                        <li>
+                            <a href="calistay.html">Çalıştay</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 col-xl-2 col-xlwd-3 mb-6">
+                    <div class="pl-xlwd-11">
+                        <h3 class="ftHeading text-white mb-4">Hızlı Erişim</h3>
+                        <ul class="list-unstyled ftsrLinksList mb-0">
+                            <li>
+                                <a href="fotograf-galerisi.html">Fotoğraf Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="video-galerisi.html">Video Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="sozlesme/gizlilik-sozlesmesi.html">Gizlilik Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a href="sozlesme/kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a>
+                            </li>
+                            <li>
+                                <a href="sozlesme/cerez-politikasi.html">Çerez Politikası</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- pageFooter -->
+    <footer id="pageFooter" class="text-center bg-dark pt-6 pb-3 pt-md-8 pb-md-5">
+        <div class="container">
+            <p>Just Together 2025   &copy;  <br class="d-md-none"><b style="color: #fff;">Tüm Hakkı Saklıdır.</b></p>
+        </div>
+        <a target="_blank" href="https://vivarteza.com/">
+            <img draggable="false" style="height: 33px;" src="https://dekmeb.org/assets/images/vivarteza-web.png">
+        </a>
+    </footer>
+</div>
+</div>
+    
+<a id="top-button"></a>
+
+<!-- include jQuery library -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="assets/js/jqueryCustom.js"></script>
+<!-- include plugins JavaScript -->
+<script src="assets/js/plugins.js"></script>
+<!-- include fontAwesome -->
+<script src="https://kit.fontawesome.com/391f644c42.js"></script>
+
+
+
+<script>
+    var btn = $('#top-button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+</script>	
+		   <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Isotope -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+	<script>
+$(document).ready(function(){
+    // Isotope öğesini başlat
+    var $grid = $('.row').isotope({
+        itemSelector: '.col-12', // Öğe seçicisi
+        layoutMode: 'fitRows'
+    });
+
+    // Filtreleme bağlantılarına tıklama olayını bağla
+    $('.ifbFiltersList a').on('click', function(){
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        
+        // Aktif sınıfını güncelle
+        $('.ifbFiltersList a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+});
+</script>
+
+</body>
+</html>

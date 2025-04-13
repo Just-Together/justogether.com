@@ -1,0 +1,369 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Eko Kırım | Blog | Just Together </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<!-- inlcude google cabin font cdn link -->
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<!-- include the site bootstrap stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/bootstrap.css">
+<!-- include the site stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/style.css">
+<!-- include theme color setting stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/colors.css">
+<!-- include the site responsive stylesheet -->
+<link rel="stylesheet" href="https://justogether.com/assets/css/responsive.css">
+<!-- inlcude google nunito sans font cdn link -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://justogether.com/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://justogether.com/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://justogether.com/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://justogether.com/assets/favicon/site.webmanifest">
+
+
+<style>
+	.navbar-light .navbar-nav .nav-link
+	 {
+    padding: 13px 15px 12px;
+    width: 100%;
+}
+	
+    #top-button {
+        display: inline-block;
+        background-color: #363737;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s,
+        opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+        text-decoration: none;
+
+    }
+    #top-button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+    #top-button:hover {
+        cursor: pointer;
+        background-color: #9d9d9d;
+    }
+    #top-button:active {
+        background-color: #9d9d9d;
+    }
+    #top-button.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+	
+</style>
+	<!-- Font Awesome Icon CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+<!--header area start-->
+
+
+<header id="pageHeader" class="bg-white">
+    <div class="hdFixerWrap py-2 py-md-6 py-xl-3 sSticky bg-white" >
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light p-0">
+                <div class="logo flex-shrink-0 mr-2 mr-xl-16 mr-wlwd-36">
+                    <a href="https://justogether.com/">
+                        <img draggable="false" src="https://justogether.com/assets/images/logo.png" class="img-fluid" width="500" alt="Just Together Logo">
+                    </a>
+                </div>
+                <div class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
+                    <div class="collapse navbar-collapse pageMainNavCollapse mt-2 mt-md-0" id="pageMainNavCollapse">
+                        <ul class="navbar-nav mainNavigation">
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hakkımızda</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="https://justogether.com/nedir">Just Together Nedir ?</a></li>
+                                        <li><a class="dropdown-item" href="https://justogether.com/ekibimiz">Ekibimiz</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+    						<a class="nav-link dropdown-toggle dropIcn" href="https://justogether.com/calistay" role="button"
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+       onclick="if(!event.target.closest('.dropdown-menu')){ window.location.href='https://justogether.com/calistay'; }">
+        Çalıştay</a>
+    							<div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+        							<ul class="list-unstyled mb-0 hdDropdownList">
+            								<li><a href="https://justogether.com/calistay#amac">Amaç</a></li>
+            								<li><a href="https://justogether.com/calistay#yontem">Yöntem</a></li>
+            								<li><a href="https://justogether.com/calistay#akis">Akış</a></li>
+            								<li><a href="https://justogether.com/calistay#egitimciler">Eğitimciler</a></li>
+            								<li><a href="https://justogether.com/calistay#panelistler">Panelistler</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ddohOpener">
+                                <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeri</a>
+                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                    <ul class="list-unstyled mb-0 hdDropdownList">
+                                        <li><a class="dropdown-item" href="https://justogether.com/fotograf-galerisi">Fotoğraf Galerisi</a></li>
+                                        <li><a class="dropdown-item" href="https://justogether.com/video-galerisi">Video Galerisi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/yakinda" >Haberler</a>
+                            </li>-->
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/blog" >Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://justogether.com/iletisim" >İletişim</a>
+                            </li>
+                        </ul>
+							<a href="https://forms.gle/eHgkKyL5WCJd8vUK8" target="_blank" class="btn btn-outline-secondary bdrWidthAlter ml-4 ml-sm-6 btnHd d-none d-lg-block text-capitalize position-relative border-0 p-0" data-hover="Gönüllü Başvuru Formu">
+    <span class="d-block btnText">Gönüllü Başvuru Formu</span>
+</a>
+
+								<button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                    </div>
+                </div>
+				<div class="hdRighterWrap d-flex align-items-center justify-content-end" hidden="">
+                    <button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button" data-toggle="collapse" data-target="#pageMainNavCollapse" aria-controls="pageMainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--header area end-->
+
+<!--breadcrumbs area start-->
+<header class="pageMainHead d-flex position-relative bgCover w-100 text-white" style="background-image: url(http://justogether.com/assets/images/breadcrumb.jpg">
+    <div class="alignHolder d-flex w-100 align-items-center">
+        <div class="align w-100 position-relative">
+            <div class="container">
+                <h1 class="text-white mb-2">Eko Kırım</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <li class="breadcrumb-item"><a href="https://justogether.com/">Anasayfa</a></li>
+                        <li class="breadcrumb-item"><a>Blog Detay</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--breadcrumbs area end-->
+<br>
+
+<div class="blog_bg_area blog_details_bg">
+    <div class="container">
+        <div class="blog_page_section">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <!--blog grid area start-->
+                    <div class="blog_wrapper blog_details">
+                        <article class="single_blog">
+                            <figure>
+                                <figcaption style="padding-top: 40px" class="blog_content">
+
+                                    <h3 class="post_title">Eko Kırım</h3>
+                                    <br>
+                                <div class="blog_thumb">
+                                    <img draggable="false"  src="https://justogether.com/yonetim/uploads/blog_v/2000.png" alt="">
+                                </div>
+                                    <br>
+                                    <div class="post_content">
+                                        <p><p>"Eğer orada olsaydım, onlara derdim ki, ellerimi kesin ama ağaçlarımı kesmeyin. Ağaç onlara ne yaptı ki, ona böyle davrandılar? Toprağı seviyorum, ona aşığım. Onlardan korkmuyorum. Beni öldürmek istiyorlarsa, öldürsünler. Bu benim toprağım. Üzerinde uyuyorum.” Filistinli bir tarım öğretmeni olan Mohammad Abu-Awad zeytin hasadı arefesinde tarlasına yapılan baskını yıllar sonra gözyaşlarıyla bu sözlerle anlatmıştı. İşgalci Yahudi yerleşimciler Abu-Awad’ın tarlasını basıp elektrikli testerelerle zeytin ağaçlarını kestiler. Geriye sadece bükülmüş kütükler bıraktılar.</p><p>Mohammad Abu-Awad Batı Şeria’da gelirini zeytin ağaçlarından sağlayan tahmini 100,000 aileden sadece birisiydi. Uzmanlar, işgalci İsrail’in 1948’den bu yana bir milyondan fazla zeytin ağacının söküldüğünü ve yok edildiğini tahmin ediyor.</p><p>Hasat zamanı geldiğinde havadan zehirli ilaçların tarım alanlarına dökülmesi, rüzgarın bu durumu daha da geniş alanlara yayması İşgalci İsrail’in yıldırma stratejilerinden biridir. Ürünü zarar gören, hasat yapması engellenen, hasat edebildiği takdirde de ürününe el konan, toprağı ve su kaynağı kirletilen Filistinli çiftçi sadece ekonomik olarak zarar görmez. Aynı zamanda toprağını terketmeye de zorlanır. Bu durum bizlere ister istemez “ekokırım” kavramını düşünmeye sevk ediyor.</p><p>Ekokırım çevresel yıkımı kasten, geniş çapta, ağır ve uzun vadeki bir biçimde ve sistematik olarak gerçekleştiren eylemleri tanımlamak için kullanılmaktadır. Terim ilk kez 1970 yılında Amerikalı biyolog Arthur Galston tarafından, ABD’nin Vietnam Savaşı’nda zehirli portakal gazını kullanmasının yol açtığı zararı belirtmek için ortaya çıktı.</p><p>76 yıldır devam eden işgalin sonucunda Filistindeki tarım ve doğal alanlar kasıtlı olarak yok edilmiştir. Etnik olarak temizliğe maruz kalan köyler yıkılıp yerlerine eğlence alanları ve parklar açılmıştır. 1948'de işgalci İsrail tarafından boşaltılan Filistin köylerinin 182'sinin yerle bir edilmiş toprakları, bugün doğa ve rekreasyon alanlarının sınırları içinde yer almaktadır. Bunlar genellikle milli parklar, doğa rezervleri ve Yahudi Ulusal Fonu (JNF) ormanları ve parklarıdır.</p><p>Doğaya zarar verilmesi, zeytin ağaçlarının kesilip sökülmesi Filistin kimliği ve geçmişinin de silinmesi anlamına gelmektedir. Zeytin dayanaklı ve yaşlı bir bitki olması ve toprağın sahibini vurgulamasıyla direnişin önemli bir simgesidir. Öte yandan işgalci İsrail çevre düzenlemesinde bu toprağa kendisi gibi yabancı, yerleşimcilerin Avrupa özlemini dindirecek, çam ağacı diker. Çünkü çam ağaçları hızlı büyür ve sanki orada uzun zamandır varmış gibi bir yanılgı oluşturur.</p><p>7 Ekim’den bu yana Gazze’ye yönelik devam eden saldırılar zeytinlikleri ve çiftlikleri sıkıştırılmış toprağa dönüştürdü. Toprak ve yeraltı suları mühimmat ve toksinlerle kirlendi; deniz, atık su ve atıklarla tıkandı; hava ise duman ve partikül maddelerle kirlendi.</p><p>Ekim'den önce çiftlikler ve bahçeler Gazze'nin toplam alanının %47'sini kaplarken, Şubat ayı sonu itibarıyla İsrail askeri faaliyetleri bu arazinin %38'inden fazlasını yok etti.</p><p>Araştırmacılar ve çevre örgütleri, 7 Ekim’den bu yana devam eden İsrail saldırılarının Gazze’nin ekosistemleri ve biyolojik çeşitliliği üzerinde büyük etkileri olacağını söylüyor.</p><p>Gazze üzerindeki ekolojik yıkımı uydu görüntüleri üzerinden değerlendiren uzmanlardan elde edilen bilgiler şöyle:</p><ul><li>7 Ekim ile 21 Mart arasında Gazze'nin ağaç örtüsünün %48'inin kaybolduğunu veya zarar gördüğünü tespit edildi. (He Jin, Kent State Üniversitesi / Coğrafya Yard. Profesörü ) Askeri saldırının doğrudan yıkımının yanı sıra, yakıt eksikliği Gazze'deki insanların yemek pişirmek veya ısınmak için bulabildikleri her yerde ağaç kesmek zorunda kalmasına yol açmıştır.</li><li>Ekim'den önce çiftlikler ve bahçeler Gazze'nin toplam alanının %47'sini kaplarken, Şubat ayı sonu itibarıyla İsrail askeri faaliyetleri bu arazinin %38'inden fazlasını yok etmiştir. (Londra merkezli araştırma grubu Forensic Architecture (FA))</li><li>Ağaçlar kesildiğinde, geriye kalan toprak bile ağır bombardıman ve yıkımlarla tehdit altındadır. Birleşmiş Milletler Çevre Programı'na (UNEP) göre, nüfus yoğun bölgelerin ağır bombardımanı, hem mühimmatların kendisi hem de çöken binaların asbest, endüstriyel kimyasallar ve yakıt gibi tehlikeli maddeleri çevredeki hava, toprak ve yeraltı sularına salması nedeniyle uzun vadede toprak ve yeraltı sularını kirletebilir.</li><li>Ocak 2024 itibarıyla, Birleşmiş Milletler Çevre Programı, bombardımanın 22,9 milyon ton enkaz ve tehlikeli madde bıraktığını tahmin ediyor. Enkazın büyük bir kısmı insan kalıntılarını içermektedir. Bu sayı Mart 2024’te BM tarafından 37 milyon ton olarak açıklandı. BM’ye göre enkazın temizlenmesi 14 yıl sürebilir.&nbsp;</li><li>"Bu, Ukrayna savaşının iki yılındaki toplam enkaz miktarından fazladır.” Gazze’de bir metrekarede 107 kilogramdan fazla enkaz bulunuyor. (Wim Zwijnenburg, Hollanda merkezli PAX örgütü)</li><li>Gazze Şeridi'nin her yerinde ortaya çıkan geçici çöplüklerde yaklaşık 70.000 ton katı atığın biriktiği, toprak ve su yollarını kirlettiği belirtiliyor. Aynı zamanda, her gün 130.000 metreküpten fazla su Akdeniz'e boşaltılmakta ve su altı flora ve faunasına ciddi zararlar vermektedir. (Wim Zwijnenburg.)</li><li>Tarım arazilerini hedef alarak, İsrail, Gazze ekonomisinin ve ekosistemlerinin önemli bir parçasına saldırmaktadır. Birleşmiş Milletler, Dünya Bankası ve Avrupa Birliği'nin ortak çalışmasına göre, tarıma verilen zarar 629 milyon dolar olarak tahmin edilmektedir.</li><li>Bir Britanya-Amerika ortak çalışmasına göre, İsrail'in savaşının ilk 60 gününün iklim maliyeti, en az 150.000 ton kömür yakmaya eşdeğerdir.</li><li>İsrail’in Gazze'deki saldırılarının ilk iki ayında üretilen sera gazı emisyonları, dünyadaki iklim değişikliğine en duyarlı 20'den fazla ülkenin yıllık karbon ayak izinden daha fazladır.</li></ul><p>Kaynak:</p><p><a href="https://www.aa.com.tr/en/middle-east/ecocide-israels-systematic-destruction-of-palestinian-agriculture-revealed/3210422">https://www.aa.com.tr/en/middle-east/ecocide-israels-systematic-destruction-of-palestinian-agriculture-revealed/3210422</a></p><p><a href="https://www.theguardian.com/environment/2024/mar/29/gaza-israel-palestinian-war-ecocide-environmental-destruction-pollution-rome-statute-war-crimes-aoe">https://www.theguardian.com/environment/2024/mar/29/gaza-israel-palestinian-war-ecocide-environmental-destruction-pollution-rome-statute-war-crimes-aoe</a></p><p><a href="https://www.newarab.com/analysis/ecocide-gaza-environmental-impact-israels-war">https://www.newarab.com/analysis/ecocide-gaza-environmental-impact-israels-war</a></p><p><br>Gülsüm Çelik<br>&nbsp;</p></p>
+                                        <br>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    <!--blog grid area start-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+<section class="exploreDepartmentsBlock py-8 py-md-10 py-lg-14 py-xl-22">
+    <div class="container">
+        <div class="row justify-content-center isoContentHolder mb-8">
+                    </div>
+    </div>
+</section>
+
+
+<!--footer area start-->
+<div class="ftAreaWrap position-relative bg-gDark fontAlter" style="width: 100%;
+	height: 100%;
+	background-image: url(https://justogether.com/assets/images/shape.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;">
+    <aside class="ftConnectAside pt-4 pb-3 pt-md-7 pb-md-7 text-center text-md-left" >
+        <div class="container" >
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7">
+                    <nav class="ftcaNav mb-4 mb-lg-0">
+                        <p>Just Together - Design For Humanity</p>
+                    </nav>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="ctConnectWrap d-sm-flex justify-content-sm-center justify-content-lg-end align-items-sm-center">
+                        <strong class="title flex-shrink-0 mb-1 font-weight-normal mr-sm-3 d-block">Sosyal Medya Hesaplarımız</strong>
+                        <ul class="list-unstyled socialNetworks ftSocialNetworks d-flex flex-wrap justify-content-center justify-content-sm-end mb-0">
+                                                        <li>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=61554677020552">
+                                    <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
+                                </a>
+                            </li>
+                                                                                                                <li>
+                                <a target="_blank" href="https://www.instagram.com/_justtogether/">
+                                    <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
+                                </a>
+                            </li>
+                                                                                        <li>
+                                    <a target="_blank" href="https://www.linkedin.com/showcase/justogether/">
+                                        <i class="fab fa-linkedin"><span class="sr-only">linkedin</span></i>
+                                    </a>
+                                </li>
+                                                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- footerAside -->
+    <aside class="footerAside pt-9 pb-sm-2 pt-xl-14 pb-xl-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-5 col-xl-3 mb-6">
+                    <div class="ftLogo  mb-6">
+                            <img draggable="false" src="https://justogether.com/assets/images/logo-white.png" class="img-fluid" width="190px" alt="Just Together - Kurumsal Logo White">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xlwd-2 mb-6">
+                    <h3 class="ftHeading text-white mb-4">Just Together</h3>
+                    <ul class="list-unstyled ftsrLinksList mb-0">
+                        <li>
+                            <a href="https://justogether.com/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://justogether.com/nedir">Nedir ?</a>
+                        </li>
+                        <li>
+                            <a href="https://justogether.com/ekibimiz">Ekibimiz</a>
+                        </li>
+                        <li>
+                            <a href="https://justogether.com/calistay">Çalıştay</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3 col-xl-2 col-xlwd-3 mb-6">
+                    <div class="pl-xlwd-11">
+                        <h3 class="ftHeading text-white mb-4">Hızlı Erişim</h3>
+                        <ul class="list-unstyled ftsrLinksList mb-0">
+                            <li>
+                                <a href="https://justogether.com/fotograf-galerisi">Fotoğraf Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/video-galerisi">Video Galerisi</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/sozlesme/gizlilik-sozlesmesi">Gizlilik Sözleşmesi</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/sozlesme/kvkk-aydinlatma-metni">KVKK Aydınlatma Metni</a>
+                            </li>
+                            <li>
+                                <a href="https://justogether.com/sozlesme/cerez-politikasi">Çerez Politikası</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- pageFooter -->
+    <footer id="pageFooter" class="text-center bg-dark pt-6 pb-3 pt-md-8 pb-md-5">
+        <div class="container">
+            <p>Just Together 2025   &copy;  <br class="d-md-none"><b style="color: #fff;">Tüm Hakkı Saklıdır.</b></p>
+        </div>
+        <a target="_blank" href="https://vivarteza.com/">
+            <img draggable="false" style="height: 33px;" src="https://dekmeb.org/assets/images/vivarteza-web.png">
+        </a>
+    </footer>
+</div>
+</div><!--footer area end-->
+
+
+
+
+
+<!-- JS
+============================================ -->
+
+
+<a id="top-button"></a>
+
+<!-- include jQuery library -->
+<script src="https://justogether.com/assets/js/jquery-3.4.1.min.js"></script>
+<!-- include custom JavaScript -->
+<script src="https://justogether.com/assets/js/jqueryCustom.js"></script>
+<!-- include plugins JavaScript -->
+<script src="https://justogether.com/assets/js/plugins.js"></script>
+<!-- include fontAwesome -->
+<script src="https://kit.fontawesome.com/391f644c42.js"></script>
+
+
+
+<script>
+    var btn = $('#top-button');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+</script>
+</body>
+
+</html>
