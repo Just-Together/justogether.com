@@ -208,7 +208,7 @@
 
         </section>
     </main>
-
+<!--
 <script>
 fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSF5eYEaYi-53C7AwKmzkFIkWkNmfjfvN8ok6fEMq5aATxk20tI3r8umz346_9CLmmU0naQLC7fa1c7/pub?output=csv')
 .then(response => response.text())
@@ -235,7 +235,7 @@ fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSF5eYEaYi-53C7AwKmzkFIkW
   });
 });
 </script>
-
+-->
     <!-- ftAreaWrap -->
 <div class="ftAreaWrap position-relative bg-gDark fontAlter" style="width: 100%;
 	height: 100%;
